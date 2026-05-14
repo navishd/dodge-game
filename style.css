@@ -1,0 +1,168 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+
+    color: white;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#stats {
+    font-size: 22px;
+}
+
+#gameArea {
+
+    width: 95vw;
+
+    max-width: 500px;
+
+    height: 80vh;
+
+    margin: 20px auto;
+
+    position: relative;
+
+    background: rgba(255,255,255,0.1);
+
+    border: 3px solid white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+#player {
+
+    width: 60px;
+
+    height: 60px;
+
+    background: #00ffcc;
+
+    position: absolute;
+
+    bottom: 10px;
+
+    left: 50%;
+
+    border-radius: 12px;
+}
+
+button {
+
+    padding: 14px 30px;
+
+    font-size: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #00c6ff;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.enemy {
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+
+.enemy-normal {
+    width: 50px;
+    height: 50px;
+    background: #ff3b3b;
+}
+
+.enemy-fast {
+    width: 40px;
+    height: 40px;
+    background: orange;
+}
+
+.enemy-big {
+    width: 80px;
+    height: 80px;
+    background: purple;
+}
+
+#controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+#controls button {
+
+    width: 80px;
+
+    height: 80px;
+
+    font-size: 30px;
+
+    border-radius: 50%;
+}
+
+.screen {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.8);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.particle {
+    width: 10px;
+    height: 10px;
+    background: yellow;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: explode 0.6s forwards;
+}
+
+@keyframes explode {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(var(--x), var(--y)) scale(0);
+        opacity: 0;
+    }
+}
