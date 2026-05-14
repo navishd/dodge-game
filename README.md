@@ -60,3 +60,4 @@ dodge-the-blocks/
 ├── style.css
 ├── script.js
 └── sounds/
+🌐 Live Demo: https://dodge-game1.netlify.app/
