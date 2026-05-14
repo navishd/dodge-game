@@ -1,9 +1,3 @@
-
----
-
-## 2. Dodge The Blocks Game README
-
-```markdown
 # 🚀 Dodge The Blocks
 
 A mobile-friendly arcade dodge game built using HTML, CSS, and JavaScript.
@@ -54,10 +48,25 @@ Dodge The Blocks is a simple arcade-style game where the player must move left a
 
 ## 📁 Project Structure
 
-```text
 dodge-the-blocks/
 ├── index.html
 ├── style.css
 ├── script.js
 └── sounds/
-🌐 Live Demo: https://dodge-game1.netlify.app/
+
+## 🌐 Live Demo
+
+https://dodge-game1.netlify.app/
+
+## 📌 Future Improvements
+
+- Leaderboard system
+- Player skins
+- Power-ups
+- Pause menu
+- More enemy types
+- Level system
+
+## 👨‍💻 Developed By
+
+Navishmitha Dakshith
